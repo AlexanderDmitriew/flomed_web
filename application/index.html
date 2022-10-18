@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="public/img/Favicon.svg" type="image/svg+xml">
+    <title>Flomed</title>
+
+</head>
+
+<header class="header col-12">
+    <!-- Логотип -->
+    <div class="header header__logo col-1">
+        <img id="logo" alt="Логотип">
+    </div>
+    <!-- Список элементов в навигации -->
+    <nav class="header header__item col-11 ">
+        <a class="mx-2 gx-2" href="#">О сервисе</a>
+        <a class="mx-2 gx-2" href="#about_algorithm">Как это работает?</a>
+        <a class="mx-2 gx-2" href="#">Безопасность</a>
+        <a class="mx-2 gx-2" href="#">Авторизация</a>
+        <a class="mx-2 gx-2" href="#">FAQ</a>
+        <button class="btn btn-primary mx-2 gx-2 " href="#">Скачать</button>
+    </nav>
+</header>
+
+<body class="custom-y-scroll">
+
+    <div class="block justify-content-center col-12">
+        <div class="block__text">
+            <h1>Позаботьтесь о здоровье вместе с Flomed</h1>
+            <p class="additional-text justify-content-center">Мобильное приложение для контроля своего здоровья</p>
+        </div>
+    </div>
+    <!-- QR код и доктор -->
+    <div class="block">
+        <div class="col-6" style="border: 1px solid red">
+            <img id="doc-1" alt="">
+        </div>
+        <div class="col-6 ">
+            <object class="qrcode justify-content-end" data="/public/img/qr-code.svg" type="image/svg+xml"
+                width="360px"></object>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="d-flex mt-4 color-background center" id="about_algorithm">
+        <div class="d-flex flex-column mt-4 col-3">
+            <h2>Алгоритмы на страже интересов</h2>
+            <p>Подбор людей основан на анализе ваших предпочтений из сервисов Яндекса.</p>
+        </div>
+        <div class=" d-flex flex-column  mt-4 col-3">
+            <h2>Можно забыть о свайпах влево</h2>
+            <p>Новый алгоритм “YAMI” обучен понимать совместимость интересов по большому количеству признаков.
+                Теперь в
+                рекомендациях вы встретите только тех, чьи интересы совпрадают с вашими. </p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="d-flex flex-column mt-4 center">
+            <h2>Как это работает?</h2>
+            <object type="image/svg+xml" data="/public/img/adventure_map.svg"></object>
+        </div>
+    </div>
+
+   
+    <div class="d-flex mt-4 image-background-security">
+        <div class="flex-column mt-4 col-3 ml-1">
+            <h2>Ваши данные в безопасности</h2>
+            <div class="item flex-column mt-4 ">
+                <h4>Авторизация через ID</h4>
+                <span><img src="/public/img/y-id.png" alt="" style="max-width:45px; max-height:20px;"></span>
+                <p>Авторизоваться в Мэтч можно только с использованием Яндекс ID, а значит ваш аккаунт защищён
+                    от
+                    взлома
+                    и кражи.</p>
+            </div>
+            <div class="item flex-column mt-4">
+                <h4>Хранение данных</h4>
+                <p>Вся информация хранится в зашифрованном виде, поэтому злоумышленники не смогу украсть ваши
+                    данные.
+                </p>
+            </div>
+            <div class="item flex-column mt-4">
+                <h4> Передача данных третьи лицам</h4>
+                <p>Вся информация хранится в зашифрованном виде, поэтому злоумышленники не смогу украсть ваши
+                    данные.
+                </p>
+            </div>
+        </div>
+        <div class="flex-column mt-4 col-3 ml-2">
+            <h2>Вы в безопасности</h2>
+            <div class="item flex-column mt-4 ">
+                <h4>Безопасные знакомства</h4>
+                <p>АВсе люди, зарегистрированные в сервисе проходят обязательную
+                    модерацию для защиты от ботов.</p>
+            </div>
+            <div class="item flex-column mt-4">
+                <h4>Нетоксичные переписки</h4>
+                <p>Алгоритм анализирует поведение пользователей в чате. Чем меньше
+                    мата или оскорблений, тем выше внутренний рейтинг пользователя, а
+                    значит, он чаще появляется в рекомендациях. Иначе - блокируется.
+                    Мы против токсичного общества..
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex mt-4 color-background center flex-column">
+        <object type="image/svg+xml" data="/public/img/ID-plus.svg" class="mt-4"></object>
+        <p class="mt-4">С помощью единого Яндекс ID и Плюс, вы улучшите качество Мэтча.
+            Вам нужно будет только настроить доступ к информации, а Мэтч уже все сделает за вас.
+            Абсолютно безопасно и анонимно. Все, что вам нужно сделать – это подключить Плюс.</p>
+        <h3>Яндекс Мэтч работает, даже без подписки</h3>
+        <p>Но мы рекомендуем подключить Плюс и использовать все возможности сервисов, а также получить максимальный
+            Мэтч.</p>
+        <div class="custom-card mb-2">
+            <div class="d-flex align-items-center mt-1 mb-2">
+                <object data="/public/img/Service_Кинопоиск.svg" type="image/svg+xml" width="48" height="48"></object>
+            </div>
+            <div class="text-start">
+                <h4>Любимые фильмы</h4>
+                <p>Алгоритм анализирует историю просмотров и учитывает это при выводе рекомендаций</p>
+            </div>
+        </div>
+        <div class="custom-card mb-2">
+            <div class="d-flex align-items-center mt-1 mb-2">
+                <object data="/public/img/Service_Такси.svg" type="image/svg+xml" width="48" height="48"></object>
+            </div>
+            <div class="text-start">
+                <h4>Избранные адреса</h4>
+                <p>Мэтч сравнивает людей по избранным адресам и знакомит людей, живущих рядом</p>
+            </div>
+        </div>
+
+
+    </div> -->
+
+
+    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="econtact-modal-label">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" class="mx-2 my-4">
+                    <label for="" class="form-label">Имя</label>
+                    <input class="form-control" type="text" name="" id="" required autocomplete="on">
+                    <label for="" class="form-label">Электронная почта</label>
+                    <input class="form-control" type="text">
+
+                </form>
+                <button class="btn btn-success m-2">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="/src/script.js"></script>
+
+</html>
