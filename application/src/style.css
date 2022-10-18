@@ -4,8 +4,17 @@
     --body-color: #FBF8FF;
     --header-text-color: #023664;
     --button-hover: #5A35FF;
-    --text-color: #000000 font-family: Lato;
+    --text-color: #000000;
+    --additional-color: #7D7B7F
 }
+
+/* Стили для удобства работы в Flex 
+#TODO Удалить после завершения работы
+*/
+.border {
+    border: 1px solid red;
+}
+
 
 /* Настройки шрифтов и текста */
 
@@ -15,6 +24,13 @@ h1 {
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -27,9 +43,9 @@ h1 {
 }
 
 .additional-text {
-    font-family: 'Lato';
+    color: var(--additional-color);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -114,11 +130,12 @@ img[id='logo'] {
 }
 
 .block {
+    margin-top: 2em;
     display: flex;
 }
 
-.block__text {
 
+.block__text {
     margin: 2em;
 }
 
@@ -136,6 +153,40 @@ img[id='logo'] {
 
 }
 
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    /* filter: drop-shadow(); */
+    align-items: center;
+    justify-content: center;
+}
+
 #doc-1 {
     content: url(/public/img/doc_pose_1.png);
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#qrcode-download {
+    border-radius: 8px;
+    box-shadow: -4px 5px 24px rgba(0, 0, 0, 0.25);
+
+}
+
+.screen {
+    min-height: calc(100vh - 76px);
+}
+
+.about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#doc-shield {
+    content: url(/public/img/doc_pose_2.png);
 }
