@@ -88,12 +88,12 @@ header {
 
 
 img[id='logo'] {
-    content: url(/public/img/logo-flomed.svg);
+    content: url(/application/public/img/logo-flomed.svg);
 }
 
 @media screen and (max-width: 900px) {
     img[id='logo'] {
-        content: url(/public/img/Mobile-icon.svg);
+        content: url(/application/public/img/Mobile-icon.svg);
     }
 }
 
@@ -121,7 +121,7 @@ img[id='logo'] {
     }
 
     img[id='logo'] {
-        content: url(/public/img/logo-flomed.svg);
+        content: url(/application/public/img/logo-flomed.svg);
     }
 
     .header {
@@ -162,7 +162,7 @@ img[id='logo'] {
 }
 
 #doc-1 {
-    content: url(/public/img/doc_pose_1.png);
+    content: url(/application/public/img/doc_pose_1.png);
 }
 
 .doctor {
@@ -183,10 +183,26 @@ img[id='logo'] {
 
 .about {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #doc-shield {
-    content: url(/public/img/doc_pose_2.png);
+    content: url(/application/public/img/doc_pose_2.png);
+}
+
+.custom-card {
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    padding: 24px;
+    width: 75%;
+}
+
+.text-card {
+    flex-direction: column;
+    margin-left: 24px;
+    text-align: left;
 }
